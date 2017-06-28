@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+
+<body>
+
+<form>
+
+
+<div id="instruction">
+<h1 style="color:red;">Instructions for submitting VRC Access Request</h1>
+
+3DExperience for SOLIDWORKS Conceptual Designer and Industrial Designer Order Manager/Technical Support access is available to authorized resellers only.
+Processing can take a minimum of 3 – 5 business days and cannot be expedited
+If you have any additional information please leave it in the "NOTES REGARDING THIS FORM" field.<br>
+</div>
+
+<div id="header">
+Required Information
+</div>
+
+<div id="mainForm">
+  <input type="radio" name="gender" value="male" checked> Male<br>
+  <input type="radio" name="gender" value="female"> Female<br>
+  <input type="radio" name="gender" value="other"> Other
+  
+  <br>
+  Name:<br>
+  <input type="text" name="firstname"><br>
+  Last name:<br>
+  <input type="text" name="lastname">
+  </div>
+   <input type="radio" name="gender" value="male" checked> Male<br>
+  <input type="radio" name="gender" value="female"> Female<br>
+  <input type="radio" name="gender" value="other"> Other
+  <br>
+  <br>
+  Optional Access for the Sales Role **required**<br>
+  Sales Role <input type="radio" onclick="javascript:yesnoCheck();" name="yesno" id="yesCheck"><br> 
+  LEADs Access – SOLIDWORKS Regional Marketing Manager Approval Required <input type="radio" onclick="javascript:yesnoCheck();" name="yesno" id="noCheck"><br>
+  None of the above<input type="radio" name="yesno">
+    <div id="ifYes" style="display:none">
+        If yes, explain: <input type='text' id='yes' name='yes' required><br>
+        What can we do to accommodate you?  <input type='text' id='acc' name='acc'>
+    </div>
+        
+        other 3<input type='text' id='other3' name='other3' required><br>
+        other 4<input type='text' id='other4' name='other4'><br>
+		<input type="submit">
+  </center>
+  
+</form> 
+
+
+</body>
+<script type="text/javascript">
+
+function yesnoCheck() {
+    if (document.getElementById('yesCheck').checked) {
+	alert("Hi");
+	
+        document.getElementById('ifYes').style.display = 'block';
+    }
+    else {document.getElementById('ifYes').style.display = 'none';
+	document.getElementById('yes').required = false;
+	}
+
+}
+</script>
+</html>
